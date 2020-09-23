@@ -40,7 +40,7 @@ export class FormComponent implements OnInit {
   onSubmit(checkoutForm) {
     this.invoiceService.addToInvoice(checkoutForm);
     this.invoiceService.setInvoiceNumber(Number(this.invNumbTemp)+Number(1))
-    // this.router.navigate(['print']);
+    this.router.navigate(['print']);
   }
 
 }
